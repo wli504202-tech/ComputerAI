@@ -1,0 +1,14 @@
+{
+  "host": "127.0.0.1",
+  "port": 8765,
+  "workspace": "../workspace",
+  "protocol_version": 1,
+  "max_file_size": 10485760,
+  "max_request_size": 1048576,
+  "max_output_size": 1048576,
+  "max_command_time": 60,
+  "allow_python": true,
+  "allow_node": true,
+  "allow_shell": false,
+  "require_confirmation": true
+}

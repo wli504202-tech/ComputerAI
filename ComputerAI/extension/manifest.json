@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Computer.AI",
+  "version": "1.0.0",
+  "description": "Local-first bridge between supported AI chat pages and your Computer.AI localhost server.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["http://127.0.0.1:8765/*", "https://chatgpt.com/*", "https://chat.deepseek.com/*", "https://chat.qwen.ai/*", "https://gemini.google.com/*", "https://meta.ai/*", "https://claude.ai/*", "https://grok.com/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "action": {"default_title": "Computer.AI", "default_popup": "popup/popup.html"},
+  "options_page": "options/options.html",
+  "content_scripts": [{
+    "matches": ["https://chatgpt.com/*", "https://chat.deepseek.com/*", "https://chat.qwen.ai/*", "https://gemini.google.com/*", "https://meta.ai/*", "https://claude.ai/*", "https://grok.com/*"],
+    "js": ["content/sites/base.js", "content/sites/chatgpt.js", "content/sites/deepseek.js", "content/sites/qwen.js", "content/sites/gemini.js", "content/sites/meta.js", "content/sites/claude.js", "content/sites/grok.js", "content/command-detector.js", "content/ui.js", "content/content.js"],
+    "css": ["content/styles.css"],
+    "run_at": "document_idle"
+  }]
+}

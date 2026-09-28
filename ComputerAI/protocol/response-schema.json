@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Computer.AI response",
+  "type": "object",
+  "required": ["id", "success"],
+  "properties": {"id": {"type": "string"}, "success": {"type": "boolean"}}
+}

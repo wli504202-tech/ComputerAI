@@ -1,0 +1,5 @@
+13:05:35 [HTTP] GET "GET /health HTTP/1.1" 200 - 0ms
+13:05:35 [OK] create_directory D:\本地千問AI\新增資料夾\ComputerAI\workspace\123 2ms
+13:05:35 [HTTP] POST "POST /command HTTP/1.1" 200 - 0ms
+13:05:35 [OK] write_file D:\本地千問AI\新增資料夾\ComputerAI\workspace\123\time.html 3ms
+13:05:35 [HTTP] POST "POST /command HTTP/1.1" 200 - 0ms
